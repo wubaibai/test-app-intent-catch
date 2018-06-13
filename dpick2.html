@@ -1,0 +1,19 @@
+<!Doctype>
+<html>
+    <body>
+        <h1>三秒後跳轉 dpickapp://55488</h1>
+        <h1>六秒後跳轉 dpick 官網 https://dpick.com/</h1>
+
+        <script>
+            console.log('aaa');
+
+            setTimeout(() => {
+                window.location.href = 'dpickapp://55488';
+
+                setTimeout(() => {
+                    window.location.href = 'https://dpick.com/';
+                }, 3000);
+            }, 3000);
+        </script>
+    </body>
+</html>
